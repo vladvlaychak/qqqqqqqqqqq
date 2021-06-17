@@ -1,0 +1,16 @@
+CREATE DATABASE mydb;
+CREATE TABLE IF NOT EXISTS `mydb`.`История` (
+`idИстория` INT NOT NULL,
+`Название` VARCHAR(100) NOT NULL,
+`Дата создания` DATE NOT NULL,
+`Количество символов` INT NOT NULL,
+PRIMARY KEY (`idИстория`));
+ 
+CREATE TABLE IF NOT EXISTS `mydb`.`Запись` (
+`idЗапись` INT NOT NULL,
+`Название` VARCHAR(100) NOT NULL,
+`Текст` TEXT,
+`Дата создания` DATE NOT NULL,
+`Количество символов` INT NOT NULL,
+`Размер` VARCHAR(100) NOT NULL,
+PRIMARY KEY (`idЗапись`));
